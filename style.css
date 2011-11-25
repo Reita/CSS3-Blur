@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background: rgba(249,255,74,0.8);
+  color: #333;
+}
+
+body,html {
+  height: 100%;
+}
+
+body {
+  font: 16px/1.1em "Segoe UI", Helvetica, sans-serif;
+  overflow: hidden;
+  background: url('bgnoise_lg.png');
+  background: radial-gradient(50% 50%, farthest-side, rgba(1,1,1,0.3), rgba(255,255,255,0) 50%),
+              url('bgnoise_lg.png');
+  text-shadow: 0 0 1px rgba(255,255,255,0.1),
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: -1px;
+  text-shadow: 0 0 3px rgba(0,0,0,0.4),
+               -1px -1px 3px rgba(0,0,0,0.4),
+               1px 1px 3px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.5);
+  padding: 30px 20px;
+  width: 574px;
+  border-radius: 10px 10px 0 0;
+}
+
+#container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+#wrapper {
+  background: rgba(100,100,100,0.2);
+  padding: 12px;
+  width: 590px;
+  height: 393px;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+  border-radius: 0 0 10px 10px;
+}
+
+#image-container {
+  overflow: hidden;
+  width: 590px;
+  height: 393px;
+  position: relative;
+  transition: border-radius 0.5s ease-out;
+}
+
+div div:hover img:nth-child(1) {
+  display: block;
+  opacity: 1;
+  transition: opacity .3s ease-out;
+  margin: 0;
+}
+
+div div:hover img {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+} 
+
+img {
+  width: 100%;
+  opacity: 0.15;
+  position: absolute;
+  transition: opacity 0.5s ease-out;
+  margin: -2px 0 0 -2px;
+}
+
+img:nth-child(1) { margin: 0;  }
+img:nth-child(2) { padding: 0 1px;  }
+img:nth-child(3) { padding: 1px 0px;}
+img:nth-child(4) { padding: 1px 2px;}
+img:nth-child(5) { padding: 2px 1px;}
+img:nth-child(6) { padding: 2px 3px;}
+img:nth-child(7) { padding: 3px 2px;}
+img:nth-child(8) { padding: 3px 4px;}
+img:nth-child(9) { padding: 4px 3px;}
+img:nth-child(10){ padding: 4px 5px;}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 210px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #444;
+  padding: 20px 15px;
+  font-size: 0.8em;
+}
+
+footer ul,
+footer li {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0072BC;
+}
+
+footer a:hover {
+  border-bottom: 1px dotted #0072BC;
+}
